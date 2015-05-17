@@ -39,7 +39,6 @@ DS.JsonApiAdapter = DS.RESTAdapter.extend({
     // - Need to use the function from the serializer to build the self key
     // TODO: this basically only works in the simplest of scenarios
     var route = this.getRoute(typeName, id, snapshot);
-    console.log("super output: ", this._super(typeName, id, snapshot, requestType));
     if(!route) {
       return this._super(typeName, id, snapshot, requestType);
     }
